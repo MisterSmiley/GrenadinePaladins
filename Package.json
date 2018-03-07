@@ -1,0 +1,13 @@
+{
+  "name": "GrenadinePaladins",
+  "description": "GrenadinePaladins",
+  "version": "0.0.0",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "discord.js": "11.1.0",
+    "paladins-api": "1.4.8"
+  }
+}
