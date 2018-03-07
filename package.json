@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "discord.js": "11.1.0",
-    "paladins-api": "1.4.8"
+    "paladins-api": "1.4.8",
+    "events": "1.1.1"
   }
 }
