@@ -4,6 +4,7 @@ const EventEmitter = require('events');
 // API Paladins - Récuperation des informations
 var sessionId;
 exports.getNewSessionID = function(send){
+    console.log("New Session ID")
     pal.connect((err, res) => {
         if(!err) {
             sessionId = res;
@@ -13,6 +14,7 @@ exports.getNewSessionID = function(send){
 }
 
 exports.getPlayerInfos = function(player_name, send){
+    console.log("getPlayerInfos")
     var playerInfosArray = [];
     pal.getPlayer(sessionId, player_name, (err, res) => {
         if(res == null){
@@ -48,6 +50,7 @@ exports.getPlayerInfos = function(player_name, send){
 }
 
 exports.getStatusInfos = function(player_name, send){
+    console.log("getStatusInfos")
     var StatusInfosArray = [];
     pal.getPlayerStatus(sessionId, player_name, (err, res) => {
         if(!err){
@@ -66,6 +69,7 @@ exports.getStatusInfos = function(player_name, send){
 }
 
 exports.getChampionsInfos = function(player_name, send){
+    console.log("getChampionsInfos")
     var ChampionsInfosArray = [];
     pal.getChampionRanks(sessionId, player_name, (err, res) => {
         if(!err){
